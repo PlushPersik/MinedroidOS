@@ -38,7 +38,7 @@
       ["X"]="100%,-11",
       ["Name"]="NoButton",
       ["Type"]="Button",
-      ["Text"]="No",
+      ["Text"]="Sure",
       ["BackgroundColour"]=16384,
       ["TextColour"]=1
     },
