@@ -202,9 +202,9 @@ function CheckAutoUpdate(arg)
 	checkAutoUpdateArg = arg
 	if http then
 		if checkAutoUpdateArg then
-			bedrock:DisplayAlertWindow("Update OneOS", "Checking for updates, this may take a moment.", {'Ok'})
+			bedrock:DisplayAlertWindow("Update Ultimate", "Checking for DJjdjgJJF, this may take a moment.", {'Ok'})
 		end
-		http.request('https://api.github.com/repos/oeed/OneOS/releases#')
+		http.request('https://api.github.com/repos/PlushPersik/UltimateOS/releases#')
 	elseif arg then
 		Log.e('Update failed. HTTP is not enabled.')
 		bedrock:DisplayAlertWindow("HTTP Not Enabled!", "Turn on the HTTP API to update.", {'Ok'})		
@@ -238,7 +238,7 @@ function SematicVersionIsNewer(version, otherVersion)
 end
 
 function AutoUpdateFail(self, event, url, data)
-	if url == 'https://api.github.com/repos/oeed/OneOS/releases#' then
+	if url == 'https://api.github.com/repos/PlushPersik/UltimateOS/releases#' then
 		Log.w('Auto update failed. (http_failure)')
 		if checkAutoUpdateArg then
 			if bedrock.Window then
@@ -252,7 +252,7 @@ function AutoUpdateFail(self, event, url, data)
 end
 
 function AutoUpdateResponse(self, event, url, data)
-	if url == 'https://api.github.com/repos/oeed/OneOS/releases#' then
+	if url == 'https://api.github.com/repos/PlushPersik/UltimateOS/releases#' then
 		os.loadAPI('/System/JSON')
 		if not data then
 			Log.w('Auto update failed. (no)')
@@ -289,20 +289,20 @@ function AutoUpdateResponse(self, event, url, data)
 
 		if version == latestReleaseTag then
 			--using latest version
-			Log.i('OneOS is up to date.')
+			Log.i('UltimateOS is up to date.')
 			if checkAutoUpdateArg then
 				if bedrock.Window then
 					bedrock.Window:Close()
 				end
-				bedrock:DisplayAlertWindow("Up to date!", "OneOS is up to date!", {'Ok'})
+				bedrock:DisplayAlertWindow("Up to date!", "UltimateOS is up to date!", {'Ok'})
 			end
 			return
 		elseif SematicVersionIsNewer(GetSematicVersion(latestReleaseTag), GetSematicVersion(version)) then			
-			Log.i('New version of OneOS available. (from '..version..' to '..latestReleaseTag..')')
+			Log.i('New version of UltimateOS available. (from '..version..' to '..latestReleaseTag..')')
 			if bedrock.Window then
 				bedrock.Window:Close()
 			end
-			bedrock:DisplayAlertWindow("Update OneOS", "There is a new version of OneOS available, do you want to update?", {'Yes', 'No'}, function(value)
+			bedrock:DisplayAlertWindow("Update UltimateOS", "There is a new version of UltimateOS available, do you want to update?", {'Yes', 'No'}, function(value)
 				if value == 'Yes' then
 					Helpers.OpenFile('System/Programs/Update OneOS.program')
 				end
