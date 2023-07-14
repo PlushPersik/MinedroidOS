@@ -1,4 +1,4 @@
-Installation
+Installation (doesn't work now)
 ====
 
 Simply run:
