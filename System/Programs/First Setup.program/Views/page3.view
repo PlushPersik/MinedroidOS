@@ -13,14 +13,14 @@
       ["Width"]="100%,-6",
       ["Name"]="Label",
       ["Type"]="Label",
-      ["Text"]="Pick a desktop background colour."
+      ["Text"]="Pick a desktop background colour(Windows 8.1 Moment)."
     },
     [3]={
       ["Y"]="100%,-1",
       ["X"]="100%,-7",
       ["Name"]="NextButton",
       ["Type"]="Button",
-      ["Text"]="Next",
+      ["Text"]="Poexali",
       ["BackgroundColour"]=256
     },
     [4]={
@@ -28,7 +28,7 @@
       ["X"]="3",
       ["Name"]="BackButton",
       ["Type"]="Button",
-      ["Text"]="Back",
+      ["Text"]="NO",
       ["BackgroundColour"]=256
     },
     [5]={
