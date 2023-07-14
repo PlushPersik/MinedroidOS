@@ -1,12 +1,3 @@
-Version 1.2 (beta)
-====
-I am currently working on version 1.2, I'm not sure when it will be released, but it's got some *huge* changes. The most significant being the new Bedrock framework which revolutionizes how GUI programs are made. You can try it out, by downloading this git, but the latest build may crash immediatly, so don't expect it to work. If it crashes or doesn't work well download the latest stable commit (pre-Bedrock): https://github.com/oeed/OneOS/archive/c3c1e7eb061397cecf49d74a0eac6dc03fb28f48.zip
-
-You will need to create a file named '.version' in the System folder and type in: 'v1.1.1' for it to work.
-
-OneOS
-====
-
 If you are going to modify any part of OneOS you MUST set isDebug to true in the startup folder. Otherwise I'll be bombarded with error reports that have nothing to do with me.
 
 Forums Post: http://www.computercraft.info/forums2/index.php?s=6cde19f0e95d5793f759f7ab9687abe4&app=forums&module=post&section=post&do=edit_post&f=32&t=17286&p=166445&st=0&_from=quickedit
@@ -15,7 +6,7 @@ Late last year I looked at PearOS and a few other ComputerCraft OSs and tried to
 
 So, anyway, enough history. I present you the 21 thousand plus line monstrosity that is OneOS.
 
-I've compiled a fairly compact (trust me, a lot of features aren't listed) list of the main ones:
+I've compiled and fairly compact (trust me, a lot of features aren't listed) list of the main ones:
 - The ability to run any ComputerCraft program
 - Multitasking (not windowed, this was intentional)
 - A desktop interface
