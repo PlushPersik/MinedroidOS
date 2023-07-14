@@ -13,14 +13,14 @@
       ["Width"]="100%,-6",
       ["Name"]="Label",
       ["Type"]="Label",
-      ["Text"]="Welcome to OneOS!\n\nBefore you get started follow these short steps to customise OneOS to your liking."
+      ["Text"]="Welcome to UltimateOS !\n\nBefore you cat with sock on head, nah its Windows 8.1."
     },
     [3]={
       ["Y"]="100%,-1",
       ["X"]="100%,-7",
       ["Name"]="NextButton",
       ["Type"]="Button",
-      ["Text"]="Next",
+      ["Text"]="Poexali",
       ["BackgroundColour"]=256
     },
   },
