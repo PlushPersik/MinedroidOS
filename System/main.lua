@@ -64,7 +64,7 @@ function FirstSetup()
 	isFirstSetup = true
 	Overlay:Initialise()
 	RegisterElement(Overlay)
-	local prog = Program:Initialise(shell, '/System/Programs/Setup.program/startup', 'OneOS Setup', {}, 1)
+	local prog = Program:Initialise(shell, '/System/Programs/Setup.program/startup', 'UltimateOS Setup', {}, 1)
 	Drawing.Clear(colours.white)
 	Draw()
 	Desktop = nil
@@ -164,10 +164,10 @@ function CheckAutoUpdate(arg)
 	checkAutoUpdateArg = arg
 	if http then
 		if checkAutoUpdateArg then
-			checkingAutoUpdateWindow = ButtonDialogueWindow:Initialise("Update OneOS", "Checking for updates, this may take a moment.", 'Ok', nil, function(success)end)
+			checkingAutoUpdateWindow = ButtonDialogueWindow:Initialise("Update UltimateOS", "Checking for updates, this may take a moment.", 'Ok', nil, function(success)end)
 			checkingAutoUpdateWindow:Show()
 		end
-		http.request('https://api.github.com/repos/oeed/OneOS/releases#')
+		http.request('https://api.github.com/repos/PlushPersik/UltimateOS/releases#')
 	elseif arg then
 		ButtonDialogueWindow:Initialise("HTTP Not Enabled!", "Turn on the HTTP API to update.", 'Ok', nil, function(success)end):Show()
 	end
@@ -198,7 +198,7 @@ function SematicVersionIsNewer(version, otherVersion)
 end
 
 function AutoUpdateFail(event, url, data)
-	if url ~= 'https://api.github.com/repos/oeed/OneOS/releases#' then
+	if url ~= 'https://api.github.com/repos/PlushPersik/UltimateOS/releases#' then
 		return false
 	end
 	if checkAutoUpdateArg then
@@ -210,7 +210,7 @@ function AutoUpdateFail(event, url, data)
 end
 
 function AutoUpdateRespose(event, url, data)
-	if url ~= 'https://api.github.com/repos/oeed/OneOS/releases#' then
+	if url ~= 'https://api.github.com/repos/PlushPersik/UltimateOS/releases#' then
 		return false
 	end
 	os.loadAPI('/System/JSON')
@@ -236,16 +236,16 @@ function AutoUpdateRespose(event, url, data)
 			if checkingAutoUpdateWindow then
 				checkingAutoUpdateWindow:Close()
 			end
-			ButtonDialogueWindow:Initialise("Up to date!", "OneOS is up to date!", 'Ok', nil, function(success)end):Show()
+			ButtonDialogueWindow:Initialise("Up to date!", "UltimateOS is up to date!", 'Ok', nil, function(success)end):Show()
 		end
 		return
 	elseif SematicVersionIsNewer(GetSematicVersion(latestReleaseTag), GetSematicVersion(OneOSVersion)) then
 		if checkingAutoUpdateWindow then
 			checkingAutoUpdateWindow:Close()
 		end
-		ButtonDialogueWindow:Initialise("Update OneOS", "There is a new version of OneOS available, do you want to update?", 'Yes', 'No', function(success)
+		ButtonDialogueWindow:Initialise("Update UltimateOS", "There is a new version of UltimateOS available, do you want to update?", 'Yes', 'No', function(success)
 			if success then
-				LaunchProgram('/System/Programs/Update OneOS/startup', {}, 'Update OneOS')
+				LaunchProgram('/System/Programs/Update OneOS/startup', {}, 'Update UltimateOS')
 			end
 		end):Show()
 	end
