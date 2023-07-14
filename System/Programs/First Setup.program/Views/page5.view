@@ -13,7 +13,7 @@
       ["Width"]="100%,-6",
       ["Name"]="Label",
       ["Type"]="Label",
-      ["Text"]="If you want a password enter it, otherwise leave the text box blank."
+      ["Text"]="If you want a password enter it, otherwise go to touch grass."
     },
     [3]={
       ["Y"]="9",
@@ -39,7 +39,7 @@
       ["X"]="100%,-7",
       ["Name"]="PasswordNextButton",
       ["Type"]="Button",
-      ["Text"]="Next",
+      ["Text"]="GO",
       ["BackgroundColour"]=256
     },
     [6]={
@@ -47,7 +47,7 @@
       ["X"]="3",
       ["Name"]="BackButton",
       ["Type"]="Button",
-      ["Text"]="Back",
+      ["Text"]="Exit",
       ["BackgroundColour"]=256
     },
     [7]={
