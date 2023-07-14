@@ -15,7 +15,7 @@
       ["Width"]=13,
       ["Name"]="VersionLabel",
       ["Type"]="Label",
-      ["Text"]="OneOS (Unknown Version)",
+      ["Text"]="UltimateOS (Unknown Version)",
       ["TextColour"]=128,
     },
     [3]={
@@ -24,7 +24,7 @@
       ["Width"]=32,
       ["Name"]="CopyrightLabel",
       ["Type"]="Label",
-      ["Text"]="(c) Oliver 'oeed' Cooper 2013-14",
+      ["Text"]="(c) cat with sock on head 2013-2099",
       ["TextColour"]=256,
     },
     [4]={
@@ -33,7 +33,7 @@
       ["Width"]=29,
       ["Name"]="LicenseLabel",
       ["Type"]="Label",
-      ["Text"]="Under CC BY-NC-ND 4.0 License",
+      ["Text"]="Under Unlicense 4.0 License",
       ["TextColour"]=256,
     },
     [5]={
@@ -52,7 +52,7 @@
       ["Height"]="100%,-13",
       ["Name"]="ThanksLabel",
       ["Type"]="Label",
-      ["Text"]="Thanks to GravityScore, NitrogenFingers, Symmetryc, superaxander, Jesusthekiller, RamiLego4Game and Vilsol for their programs or help. Most of all, thank you using OneOS!",
+      ["Text"]="Thanks to GravityScore, NitrogenFingers, Symmetryc, superaxander, Jesusthekiller, RamiLego4Game and Vilsol and PlushPersik for their programs or help. Most of all, thank you using UltimateOS, from Cackemc!",
       ["TextColour"]=128,
     },
     [7]={
