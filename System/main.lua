@@ -3,7 +3,7 @@ local bedrock = Bedrock:Initialise('/System')
 bedrock.ViewPath ='/System/Views/'
 -- _G.Helpers = Helpers
 -- error(Helpers.IconForFile)
-bedrock.AllowTerminate = false
+bedrock.AllowTerminate = true
 
 if type(term.native) == 'function' then
 	local cur = term.current()
